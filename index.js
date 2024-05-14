@@ -19,6 +19,10 @@ $(document).ready(() => {
                 $(row).find('td:eq(3)').text(rowData.age)
             }
         })
+        tabIndex()
+    }
+
+    function insertNewRows() {
         for (var i = $('#tableBody tr').length; i < data.length; i++) {
             var rowData = data[i]
             var rowId = 'row' + (rowData.id + 1)
@@ -26,7 +30,6 @@ $(document).ready(() => {
             var row = '<tr id=' + rowId + '><td>' + (rowData.id + 1) + '</td><td>' + rowData.name.toUpperCase() + '</td><td>' + rowData.lastName.toUpperCase() + '</td><td>' + rowData.age + '</td>' + removeBtn
             $('#tableBody').append(row)
         }
-        tabIndex()
     }
 
     $('#submit-btn').click(() => {
@@ -44,7 +47,8 @@ $(document).ready(() => {
                 'age': age
             })
 
-            refreshTable()
+            insertNewRows()
+            tabIndex()
 
             $('#nameInput').val('')
             $('#lastNameInput').val('')
