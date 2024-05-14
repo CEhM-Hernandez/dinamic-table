@@ -1,0 +1,109 @@
+body {
+    background-color: #eee;
+}
+
+main {
+    margin: 10rem;
+}
+
+h1 {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card {
+    padding: 2rem;
+}
+
+.card:first-child {
+    margin-bottom: 5rem;
+}
+
+.table {
+    text-align: center;
+    vertical-align: middle;
+    width: 60%;
+    margin: auto;
+}
+
+.table-head {
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.table-rows-index-col {
+    width: 50px;
+}
+
+.table-age-col {
+    width: 100px;
+}
+
+.table-action-col {
+    width: 95px;
+}
+
+.table-action-col button {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    color: #fff;
+    padding: 0;
+    transition: background-color .8s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%)
+}
+
+.table-action-col button i {
+    line-height: 40px;
+    font-size: 1.3rem;
+}
+
+.popover-header {
+    text-align: center;
+}
+
+.popover-body div {
+    margin-bottom: 10px;
+    border: #c5c5c5 solid 1px;
+    border-radius: 5px;
+    background-color: #e4e3e3;
+}
+
+.popover-body div p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+.popover-body div button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 5px;
+}
+
+.popover-body div button i {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.remove-btn {
+    border: none;
+    background-color: rgb(255, 0, 0);
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+}
+
+.remove-btn:hover {
+    background-color: rgb(170, 0, 0);
+}
+
+.remove-btn i {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
